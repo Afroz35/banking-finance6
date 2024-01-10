@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %} {% load static %} {% block head_title %}KLB-The Banking System{% endblock %} {% block content %}
+<div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+
+
+    <div class="w-full lg:w-1/2 lg:py-6 text-center">
+        <h1 style="font-size: 12rem" class="font-black text-blue-900 text-opacity-50"></h1>
+    </div>
+    <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6 bg-white rounded-2xl bg-opacity-70">
+        <h1 class="font-bold text-4xl my-4">KLB-The Banking System</h1>
+        <p class="leading-normal mb-3">
+            Welcome to loans page                                                      ..
+        </p>
+       <br><br>
+       
+
+
+        
+
+
+
+
+        <div class="flex justify-end w-full">
+            <a href="{% url 'accounts:user_loans' %}" class="bg-black-900 text-black rounded-none hover:bg-black hover:text-black-900 hover:border-black-900 shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent">check?</a>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
